@@ -2,9 +2,9 @@
 
 Interactively create text-filtering commands (`sed`, `jq`, `awk`, `grep`, etc) with immediate feedback.
 
-![sed demo](pics/sed_demo.mp4)
+https://user-images.githubusercontent.com/43073868/153730961-0041d2c8-d074-4fe3-9c59-26409a92b214.mp4
 
-![jq demo](pics/jq_demo.mp4)
+https://user-images.githubusercontent.com/43073868/153730962-527ad148-c4ba-4550-a946-4f6c29c986ac.mp4
 
 This is a tool born of frustration with UNIX command-line text-filtering tools, like `sed`, `awk`, `jq`, and so on. Whenever I needed to use one, I would end up in a frustrating loop of "type command -> press enter -> see error / incorrect output -> repeat". I wanted something with **immediate** feedback so I could iteratively construct the filter string. I also didn't want to deal with the maddening incidental complexity that is shell quote-escaping.
 
