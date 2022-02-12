@@ -20,14 +20,12 @@ Clone the repo, make `_fwf_main` and `_fwf_columnate` executable via `chmod u+x`
 
 ```zsh
 function fwf() {
-  local result=$(cat /dev/stdin | _fwf_main "$@")
+  local result="$(< /dev/stdin | _fwf_main $@)"
   local last=$history[$HISTCMD]
   local removed_fwf="$(echo -E $last | sed -E 's/(.*)fwf /\1/g')"
   print -z -r "$removed_fwf $result"
 }
 ```
-
-Yeah it's a useless-use-of-cat; blow me.
 
 ## Usage:
 

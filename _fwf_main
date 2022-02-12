@@ -1,13 +1,13 @@
 #!/bin/zsh
 
-tempfile=/tmp/.fwf
-cat - > "$tempfile"
+tempfile='/tmp/.fwf'
+< /dev/stdin > $tempfile
 
 # https://unix.stackexchange.com/a/197794
 command="$*"
 
 preview_command="_fwf_columnate $tempfile <(< $tempfile | $command {q} 2>&1)"
-command_string=$(echo '' | fzf --no-extended --print-query --preview-window up:90% --preview "$preview_command")
+command_string="$(echo '' | fzf --no-extended --print-query --preview-window up:90% --preview "$preview_command")"
 
 function shell_escape() {
   local single="'"
@@ -17,5 +17,5 @@ function shell_escape() {
 }
 
 shell_escape "$command_string"
-
 rm $tempfile
+
