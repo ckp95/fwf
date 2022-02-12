@@ -12,7 +12,7 @@ So, I hacked together a pair of zsh scripts that let me type in a filter command
 
 It uses the `fzf` utility to render the preview, since I'm lazy and didn't want to code such a thing myself.
 
-I am very happy with the result. `fwf` makes exploration through the solution-space fast and cheap, resulting in less trawling through StackOverflow. The burden on working memory is reduced by showing the before-text, the after-text, and the filter string all on one screen, and by handling shell-escaping automatically. I used to hate `sed`, `awk`, and `jq`, but combined with `fwf` they are a fun to use. I hope you find it useful as well.
+I am very happy with the result. `fwf` makes exploration through the solution-space fast and cheap, resulting in less trawling through StackOverflow. The burden on working memory is reduced by showing the before-text, the after-text, and the filter string all on one screen, and by handling shell-escaping automatically. I used to hate `sed`, `awk`, and `jq`, but combined with `fwf` they are fun to use. I hope you find it useful as well.
 
 ## Installation:
 
