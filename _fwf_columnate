@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 (( cols=$(tput cols) ))
 (( halfcols=cols/2 ))
@@ -8,7 +8,7 @@ function wrap() { fold -s -w $halfcols "$1" }
 function prepend() { echo "$1"; cat "$2" }
 
 function columnate() {
-   pr -w $cols -m -T <(prepend 'Original' <(wrap "$1")) <(prepend 'Result' <(wrap "$2"))
+   pr -w $cols -m -t <(prepend 'Original' <(wrap "$1")) <(prepend 'Result' <(wrap "$2"))
 }
 
 columnate "$1" "$2"
