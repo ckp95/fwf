@@ -16,16 +16,10 @@ I am very happy with the result. `fwf` makes exploration through the solution-sp
 
 ## Installation:
 
-Clone the repo, make `_fwf_main` and `_fwf_columnate` executable via `chmod u+x`, copy them or symlink them somewhere on your `$PATH`, then add the following snippet to your `.zshrc`:
-
-```zsh
-function fwf() {
-  local result="$(< /dev/stdin | _fwf_main $@)"
-  local last=$history[$HISTCMD]
-  local removed_fwf="$(echo -E $last | sed -E 's/(.*)fwf /\1/g')"
-  print -z -r "$removed_fwf $result"
-}
-```
+Install the files `fwf`, `_fwf_main`, and `_fwf_columnate` somewhere on
+your fpath (for example, if you have `fpath=(~/.zsh $fpath)`, place them
+in `~/.zsh`), then include `autoload -U fwf` in your `.zshrc` or another
+startup file.
 
 ## Usage:
 

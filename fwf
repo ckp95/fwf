@@ -1,0 +1,6 @@
+autoload -U _fwf_main
+
+local result="$(< /dev/stdin | _fwf_main $@)"
+local last=$history[$HISTCMD]
+local removed_fwf="$(echo -E $last | sed -E 's/(.*)fwf /\1/g')"
+print -z -r "$removed_fwf $result"
