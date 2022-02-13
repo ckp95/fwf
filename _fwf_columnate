@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 (( cols=$(tput cols) ))
 (( halfcols=cols/2 ))
