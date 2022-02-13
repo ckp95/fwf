@@ -1,4 +1,4 @@
-tempfile='/tmp/.fwf'
+tempfile=`mktemp /tmp/.fwf.XXXXXX`
 < /dev/stdin > $tempfile
 
 # https://unix.stackexchange.com/a/197794
