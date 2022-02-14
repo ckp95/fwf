@@ -1,6 +1,6 @@
 # fwf - Filter With Feedback
 
-Interactively create text-filtering commands (`sed`, `jq`, `awk`, `grep`, etc) with immediate feedback.
+Interactively create [text-filtering](https://en.wikipedia.org/wiki/Filter_(software)) commands (`sed`, `jq`, `awk`, `grep`, etc) with immediate feedback.
 
 https://user-images.githubusercontent.com/43073868/153730961-0041d2c8-d074-4fe3-9c59-26409a92b214.mp4
 
