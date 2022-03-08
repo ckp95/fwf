@@ -22,7 +22,7 @@ your fpath (for example, if you have `fpath=(~/.zsh $fpath)`, place them
 in `~/.zsh`), then include `autoload -U fwf` in your `.zshrc` or another
 startup file.
 
-### Using zinit (https://github.com/zdharma-continuum/zinit)
+### Using [zinit](https://github.com/zdharma-continuum/zinit)
 
 Add the following to your zsh configuration:
 ```
