@@ -16,10 +16,26 @@ I am very happy with the result. `fwf` makes exploration through the solution-sp
 
 ## Installation:
 
+### Manual
 Install the files `fwf`, `_fwf_main`, and `_fwf_columnate` somewhere on
 your fpath (for example, if you have `fpath=(~/.zsh $fpath)`, place them
 in `~/.zsh`), then include `autoload -U fwf` in your `.zshrc` or another
 startup file.
+
+### Using [zinit](https://github.com/zdharma-continuum/zinit)
+
+Add the following to your zsh configuration:
+```
+zinit ice as"command"
+zinit snippet 'https://raw.githubusercontent.com/ckp95/fwf/6a8cec7a401fdb1928648ac4a68077438392243f/_fwf_main'
+export FPATH="$FPATH:$(which _fwf_main)"
+
+zinit ice as"command"
+zinit snippet 'https://raw.githubusercontent.com/ckp95/fwf/6a8cec7a401fdb1928648ac4a68077438392243f/fwf'
+
+zinit ice as"command"
+zinit snippet 'https://raw.githubusercontent.com/ckp95/fwf/6a8cec7a401fdb1928648ac4a68077438392243f/_fwf_columnate'
+```
 
 ## Usage:
 
