@@ -59,7 +59,7 @@ cat my_file.json | fwf jq
 
 ## Caveats
 
-- It only works by piping stuff into it, i.e. `something | fzed awk`, not `fzed something awk`.
+- It only works by piping stuff into it, i.e. `something | fwf awk`, not `fwf something awk`.
 - It writes the entire piped input into a temporary file and then reads that file into memory, so you might want to cut down big inputs with `head` first.
 - It doesn't preserve colors / syntax highlighting.
 - It only works in zsh.
