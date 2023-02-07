@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/43073868/153730962-527ad148-c4ba-4550-
 
 This is a tool born of frustration with UNIX command-line text-filtering tools, like `sed`, `awk`, `jq`, and so on. Whenever I needed to use one, I would end up in a frustrating loop of "type command -> press enter -> see error / incorrect output -> type out command again -> repeat". I wanted something with **immediate** feedback so I could iteratively construct the filter string. I also didn't want to deal with the maddening incidental complexity that is shell quote-escaping.
 
-So, I hacked together a pair of zsh scripts that let me type in a filter command and see the results live-update with every keypress. On exit, it edits the current zsh buffer so that the new prompt contains the previous command (minus `fwf), plus whatever you typed. So you can immediately run it, or continue building up a longer command with more pipes and filters.
+So, I hacked together a pair of zsh scripts that let me type in a filter command and see the results live-update with every keypress. On exit, it edits the current zsh buffer so that the new prompt contains the previous command (minus `fwf`), plus whatever you typed. So you can immediately run it, or continue building up a longer command with more pipes and filters.
 
 It uses the `fzf` utility to render the preview, since I'm lazy and didn't want to code such a thing myself.
 
